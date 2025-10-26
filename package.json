@@ -1,0 +1,35 @@
+{
+  "name": "eliza-dot-aes",
+  "version": "1.0.0",
+  "description": "AES encryption with multiple cryptographic backends",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@scure/sr25519": "^0.3.0",
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@eliza-dot-aes/common": "^1.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "crypto",
+    "aes",
+    "encryption"
+  ],
+  "author": "weimeme",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@noble/curves": "^1.9.7",
+    "jssha": "^3.3.1",
+    "list": "^2.0.19",
+    "types": "link:@polkadot/util-crypto/types"
+  }
+}

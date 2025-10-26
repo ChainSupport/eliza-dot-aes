@@ -1,0 +1,41 @@
+{
+  "name": "@eliza-dot-aes/ed25519-aes",
+  "version": "1.0.2",
+  "description": "AES encryption with Ed25519/X25519 cryptographic backend",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "!src/**/*.spec.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["crypto", "aes", "ed25519", "x25519", "encryption"],
+  "author": "weimeme",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weimeme/eliza-dot-aes.git"
+  },
+  "dependencies": {
+    "@eliza-dot-aes/common": "^1.0.0",
+    "@noble/curves": "^1.3.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

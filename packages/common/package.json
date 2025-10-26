@@ -1,0 +1,48 @@
+{
+  "name": "@eliza-dot-aes/common",
+  "version": "1.0.7",
+  "description": "Common interfaces and utilities for Eliza-dot-AES",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "!src/**/*.spec.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "crypto",
+    "aes",
+    "encryption",
+    "common"
+  ],
+  "author": "weimeme",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weimeme/eliza-dot-aes.git"
+  },
+  "dependencies": {
+    "@polkadot/util-crypto": "^12.0.0",
+    "crypto": "^1.0.1",
+    "jssha": "^3.3.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
