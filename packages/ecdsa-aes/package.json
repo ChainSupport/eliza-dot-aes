@@ -1,6 +1,6 @@
 {
   "name": "@eliza-dot-aes/ecdsa-aes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AES encryption with ECDSA (secp256k1) cryptographic backend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
