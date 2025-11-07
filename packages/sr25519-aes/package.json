@@ -1,6 +1,6 @@
 {
   "name": "@eliza-dot-aes/sr25519-aes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AES encryption with SR25519 cryptographic backend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
