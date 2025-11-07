@@ -10,7 +10,6 @@ dist/
 build/
 
 # Test coverage
-coverage/
 
 # TypeScript
 *.tsbuildinfo
