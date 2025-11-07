@@ -1,6 +1,6 @@
 {
   "name": "@eliza-dot-aes/sr25519-aes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AES encryption with SR25519 cryptographic backend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -26,7 +26,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weimeme/eliza-dot-aes.git"
+    "url": "https://github.com/ChainSupport/eliza-dot-aes.git"
   },
   "dependencies": {
     "@eliza-dot-aes/common": "^1.0.0",
