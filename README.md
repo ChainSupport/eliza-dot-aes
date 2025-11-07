@@ -19,6 +19,9 @@ This monorepo contains the following packages:
 pnpm install
 
 # Run tests
+pnpm test
+
+# Generate coverage report
 pnpm test:coverage
 ```
 
