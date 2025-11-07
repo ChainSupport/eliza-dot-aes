@@ -3,6 +3,7 @@
 ./node_modules/*
 .pnpm-store/
 node_modules
+*coverage*
 
 # Build outputs
 #lib/
@@ -13,7 +14,7 @@ build/
 
 # TypeScript
 *.tsbuildinfo
-
+/coverage
 # Logs
 logs
 *.log
